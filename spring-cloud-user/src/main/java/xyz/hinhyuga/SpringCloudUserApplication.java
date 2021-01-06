@@ -14,6 +14,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 public class SpringCloudUserApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudUserApplication.class,args);
+        SpringApplication.run(SpringCloudUserApplication.class, args);
     }
 }
