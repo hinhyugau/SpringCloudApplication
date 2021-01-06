@@ -23,7 +23,7 @@ public class UserController {
     @Value("${human.age}")
     private Integer age;
 
-    @GetMapping
+    @RequestMapping("/getUser")
     public User getUser() {
         User user = new User();
         user.setAge(age);

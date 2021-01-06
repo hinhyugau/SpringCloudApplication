@@ -19,7 +19,6 @@ eureka: #注册中心配置
     service-url:
       defaultZone: http://127.0.0.1:8888/eureka/  #eureka server地址
 management:
-  endpoint:
   endpoints:
     web:
       exposure:

@@ -12,6 +12,7 @@
         <module>spring-cloud-regist</module>
         <module>spring-cloud-user</module>
         <module>spring-cloud-config-server</module>
+        <module>spring-cloud-gateway</module>
     </modules>
     <!--parent-->
     <parent>
