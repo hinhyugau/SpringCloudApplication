@@ -1,0 +1,12 @@
+server:
+  port: 7900  #服务端口
+spring:
+  application:
+    name: springcloud-user #制定应用的唯一表示/服务名
+eureka: #注册中心配置
+  instance:
+    prefer-ip-address: true  #优先使用IP地址注册
+    hostname: springcloud-user
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka/  #eureka server地址
