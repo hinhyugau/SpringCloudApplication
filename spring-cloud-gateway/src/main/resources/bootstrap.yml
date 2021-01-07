@@ -29,6 +29,8 @@ spring:
 #            - After=2018-01-20T06:06:06+08:00[Asia/Shanghai] #根据时间进行匹配，在指定时间之后才会匹配路由
 #            - Before=2018-01-20T06:06:06+08:00[Asia/Shanghai] #根据时间进行匹配，在指定时间之前才会匹配路由
 #            - Between=2018-01-20T06:06:06+08:00[Asia/Shanghai], 2019-01-20T06:06:06+08:00[Asia/Shanghai] #根据时间段进行匹配，处于指定时间段才会匹配路由
+          filters:
+            - RequestTime=true #此处仅需要配置过滤器工厂前缀及其属性值启动即可（注意"-"后面一定要跟空格，否则报错）
   main:
     allow-bean-definition-overriding: true    #是否允许同Bean覆盖
 eureka:

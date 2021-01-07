@@ -13,6 +13,7 @@
         <module>spring-cloud-user</module>
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-gateway</module>
+        <module>common-data</module>
     </modules>
     <!--parent-->
     <parent>
