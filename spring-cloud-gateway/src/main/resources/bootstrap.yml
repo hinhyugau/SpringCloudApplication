@@ -22,9 +22,9 @@ spring:
           uri: lb://springcloud-user #网关路由到spring cloud-user模块，lb指向内部注册模块
           predicates:  #转发谓词，用于设置匹配路由的规则
             - Path=/user/**   #通过请求路径匹配
-          fiters:
-            - RewritePath=/user(?<segment>/?.*), $\{segment}
-  #            - Method=GET      #通过请求方式匹配
+ #         fiters:
+ #           - RewritePath=/user(?<segment>/?.*), $\{segment}
+ #           - Method=GET      #通过请求方式匹配
 #            - RemoteAddr=127.0.0.1/25   #通过请求id匹配，只有在某个 ip 区间号段的请求才会匹配路由，其中/后的是子网掩码
 #            - After=2018-01-20T06:06:06+08:00[Asia/Shanghai] #根据时间进行匹配，在指定时间之后才会匹配路由
 #            - Before=2018-01-20T06:06:06+08:00[Asia/Shanghai] #根据时间进行匹配，在指定时间之前才会匹配路由
